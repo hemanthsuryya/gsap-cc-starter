@@ -1,12 +1,26 @@
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
+
 const GsapTo = () => {
   // TODO: Implement the gsap.to() method
+  useGSAP(() => {
+    gsap.to('#blue-box', {
+      x: 500,
+      repeat: -1,
+      yoyo: true, 
+      rotation: 360,
+      duration: 3, 
+      ease: 'elastic'
+
+    })
+  },[])
 
   return (
     <main>
-      <h1>GsapTo</h1>
+      <h1 className="text-red-300">GsapTo</h1>
 
-      <p className="mt-5 text-gray-500">
-        The <code>gsap.to()</code> method is used to animate elements from their
+      <p className="mt-5 text-red-500">
+        Twwwwwhe <code>gsap.to()</code> method is used to animate elements from their
         current state to a new state.
       </p>
       <p className="mt-5 text-gray-500">

@@ -13,7 +13,7 @@ import {
 
 const App = () => {
   return (
-    <div className="bg-black min-h-screen w-full">
+    <div className="bg-black h-full w-full">
       <Router>
         <Routes>
           <Route path="/gsapto" element={<GsapTo />} />
